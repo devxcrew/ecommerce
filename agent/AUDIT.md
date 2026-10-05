@@ -115,3 +115,13 @@ This delivery covers GitHub source. Npm publication, production deployment and r
 ## GitHub release verification - 2026-10-04
 
 Version 0.1.2: npm run verify passed. 3 tests, lint, types, build and production smoke. Authenticated cloud governance connection and configured-secret scan passed. GitHub source delivery is authorized; npm publication and deployment are outside this release.
+
+## Dependency alignment - 2026-10-05
+
+- [x] Align consumed shared packages and common direct dependency versions.
+- [x] Install dependencies with lifecycle scripts disabled.
+- [x] Keep app dependency ownership and public peer ranges.
+- [x] Exclude Veyrezio from this change.
+
+Source version: 0.1.4. Published package archives retain their existing versions.
+The baseline is recorded in projects/cxsun/agent/DEPENDENCY-BASELINE.json.
