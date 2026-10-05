@@ -1,5 +1,13 @@
 # Verification evidence
 
+## Ecommerce table plan - 2026-10-05
+
+- Passed: `npm run mcp:connect` returned exit code 0. The service response remains advisory and identifies an October 3 deployment snapshot.
+- Passed: reviewed the proposed table plan against official product, cart, channel, payment, inventory, order, and fulfillment documentation.
+- Passed: checked Markdown table structure, duplicate table names, and whitespace changes.
+- Reviewed checkout idempotency, expired stock holds, delayed payment events, partial shipments, cancellation, and refund allocation rules.
+- The plan describes proposed tables. No database migrations, application tests, release, commit, or push were performed for this task.
+
 ## Package migration - 2026-10-05
 
 - [x] Retrieve authenticated cloud governance before this migration.
@@ -125,3 +133,19 @@ Version 0.1.2: npm run verify passed. 3 tests, lint, types, build and production
 
 Source version: 0.1.4. Published package archives retain their existing versions.
 The baseline is recorded in projects/cxsun/agent/DEPENDENCY-BASELINE.json.
+
+
+## Shared alignment audit - 2026-10-05
+
+Full verification and package boundaries passed with Framework 0.1.11. Preview sessions remain; identity migration is separate work.
+
+Authenticated live MCP verification passed. See the [alignment audit](D:/codexsun/projects/cxsun/agent/SHARED-ALIGNMENT.md). Version numbers remain unchanged. No release delivery was performed by this audit.
+
+## Cxsun foundation parity - 2026-10-05
+
+Current source and exact dependencies match Cxsun after app-name and port substitutions.
+This app keeps its own ID, release version, database, Git repository and history.
+Verification passed: 46 tests, lint, types, build, compiled identity, package boundaries and authenticated live MCP.
+SQLite migration, configured seed and connection checks passed. Preview source was removed. Blank bootstrap fields create no accounts.
+
+See [foundation parity](D:/codexsun/projects/cxsun/agent/FOUNDATION-PARITY.md) for evidence and remaining acceptance work. Live inventory needs refresh after this change. No commit, push, publication or deployment was performed.
